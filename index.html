@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculateur GPS</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+</head>
+
+<body>
+
+<header>
+    <h1>Calculateur GPS</h1>
+</header>
+
+<main>
+
+    <!-- Formulaire principal -->
+    <form id="gpsForm">
+
+        <!-- Position du pilote -->
+        <section class="position_pilote">
+            <h2>Position du pilote</h2>
+            <div class="inputs">
+                <input type="text" name="pilote_lat" placeholder="Latitude">
+                <input type="text" name="pilote_long" placeholder="Longitude">
+                <input type="text" name="pilote_alt" placeholder="Altitude">
+            </div>
+        </section>
+
+        <!-- Position du drone -->
+        <section class="position_drone">
+            <h2>Position du drone</h2>
+            <div class="inputs">
+                <input type="text" name="drone_lat" placeholder="Latitude">
+                <input type="text" name="drone_long" placeholder="Longitude">
+                <input type="text" name="drone_alt" placeholder="Altitude">
+            </div>
+        </section>
+
+        <button type="submit" class="calcul">Calculer la distance</button>
+
+    </form>
+
+    <!-- Affichage distance -->
+    <div id="distance"></div>
+
+    <!-- Carte -->
+    <div id="map"></div>
+
+</main>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<!-- Script principal -->
+<script src="calcul.js"></script>
+
+</body>
+</html>

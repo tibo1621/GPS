@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #FCF3ED;
+    color: #FCF3ED;
+    line-height: 1.2;
+    padding: 10px;
+}
+
+header {
+    background: #555250;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+}
+
+#gpsForm {
+    background: #555250;
+    padding: 1rem;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+}
+
+.position_pilote,
+.position_drone {
+    margin-bottom: 2rem; /* plus d'espace entre sections */
+}
+
+.position_pilote h2,
+.position_drone h2 {
+    margin-bottom: 0.5rem; /* texte proche des inputs */
+}
+
+.inputs {
+    display: flex;           /* inputs sur la même ligne */
+    justify-content: center; /* centrés horizontalement */
+    gap: 1.5rem;             /* espace entre chaque input */
+}
+
+.inputs input {
+    width: 33%;                 
+    padding: 0.8rem;            
+    font-size: 1.2rem;            
+    border-radius: 1.5rem;        
+    border: 2px solid #adadad; 
+    color: #333;                
+    background-color: #F0F8FF;
+    outline: none;             
+}
+
+.inputs input:focus {
+    border-color: #9f9494;      
+    box-shadow: 0 0 5px rgba(142, 145, 149, 0.5); 
+}
+
+button.calcul {
+    padding: 1.2rem 1.6rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #FCF3ED;
+    color: #555250;
+    border: none;
+    border-radius: 1.8rem;
+    transition: background 0.3s, transform 0.2s;
+
+    /* CENTRAGE */
+    display: block;
+    margin: 1.5rem auto; /* centre le bouton horizontalement et ajoute un espace vertical */
+    cursor: pointer;
+}
+
+button.calcul:hover {
+    background-color: #F0F8FF;  
+}
+
+button.calcul:active {
+    transform: scale(0.98);  
+}
+
+#map {
+    height: 50rem;
+    border: 5px solid #555250;
+    border-radius: 2rem;
+}
+
+#distance {
+    display: none;          /* invisible par défaut */
+    background: #555250;
+    text-align: center;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    color: #F0F8FF;         /* texte lisible */
+    font-size: 1.2rem;
+}
